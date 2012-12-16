@@ -1,0 +1,8 @@
+{
+	"extName":{
+		"message":"中行汇率助手"
+	},
+	"extDescription":{
+		"message":"监控中国银行外汇牌价，显示汇率走势图，条件提醒等。"
+	}
+}

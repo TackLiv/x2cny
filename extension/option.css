@@ -1,0 +1,131 @@
+
+!* {
+	outline: 1px solid #999;
+}
+
+body {
+	font: 16px 'Josefin Sans', Helvetica, Tahoma, Georgia, Arial, serif, sans-serif;
+}
+
+
+
+#content {
+	margin: 10px auto;
+	overflow: hidden;
+	width: 600px;
+	height: 100%;
+	padding: 20px;
+}
+
+h1 {
+	font-size: 1.8em;
+	font-weight: 700;
+	box-shadow: 0 5px 10px -3px #DDD;
+	line-height: 1.8em;
+	padding: 0 10px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 1.3em;
+	font-weight: 700;
+	padding: 0 10px;
+}
+
+ul {
+	margin: 10px 30px;
+}
+
+ul li {
+	display: inline-block;
+	padding: 0 5px;
+	line-height: 30px;
+	font-size: 1em;
+}
+
+.section p {
+	margin: 10px 20px;
+}
+
+.checked {
+	border-radius: 5px;
+	background: #5DA0FF;
+	padding: 0 5px 3px;
+	color: #FFF;
+}
+
+.button {
+	text-align: center;
+	display: inline-block;
+	border: 1px solid #DDD;
+	padding-bottom: 8px;
+	width: 100px;
+}
+
+.button:hover {
+	background: #4D90FE;
+	color: #FFF;
+}
+
+#newTriggerPanel {
+	border: 1px solid #DDD;
+	display: none;
+}
+
+.save {
+	box-shadow: 0 -5px 15px -5px #999;
+	margin-top: 50px;
+}
+
+.save a {
+	display: block;
+	text-align: center;
+	font-size: 1.6em;
+	line-height: 1.2em;
+	padding-bottom: 10px;
+}
+
+.save a:hover {
+	background: #4D90FE;
+	color: #FFF;
+}
+
+.dellTrigger img {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	top: 10px;
+}
+
+.index {
+	display: none;
+}
+
+.error {
+	box-shadow: 0 0 8px 1px #E22;
+	border: 1px solid #DDD;
+}
+
+#message {
+	width: 200px;
+	height: 50px;
+	border-radius: 5px;
+	box-shadow:  0 0 0px 20000px rgba(0,0,0,0.5);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -25px;
+	margin-left: -100px;
+	background-color: #FFF;
+	line-height: 50px;
+	font-size: 1.2em;
+	display: none;
+	text-align: center;
+	font-weight: 700;
+}
+
+#triggerError {
+	color: #E33;
+	margin-left: 20px;
+	display: none;
+}

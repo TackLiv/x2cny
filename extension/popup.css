@@ -1,0 +1,128 @@
+body {
+	font: 20px 'Josefin Sans', Helvetica, Tahoma, Georgia, Arial, serif, sans-serif;
+	width: 600px;
+	max-height: 700px;
+	overflow: scroll;
+}
+
+#content {
+	border: 1px dashed #DDD;
+}
+
+#content li {
+	border-top: 1px dashed #DDD;
+	overflow: hidden;
+	text-align: center;
+}
+
+#content li a {
+	text-decoration: underline;
+}
+
+#content #top {
+	font-size: 0.9em;
+	font-weight: 400;
+	text-align: left;
+	margin-left: 20px;
+}
+
+#content #top #refresh {
+	float: right;
+	margin-right: 20px;
+}
+
+#content #loader {
+	background-image:url(loader.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	float: right;
+	width: 25px;
+	height: 25px;
+	display: none;
+}
+
+#content a#option {
+	font-size: 0.8em;
+	font-weight: 400;
+	float: left;
+	margin-left: 20px;
+	text-decoration: none;
+}
+
+#content li .chart {
+	display: none;
+}
+
+#content li .chart .control {
+	text-align: right;
+	margin: 0 10px;
+}
+
+#content li .title {
+	text-decoration: none;
+	display: block;
+	height: 50px;
+	line-height: 35px;
+	text-align: left;
+	background: #FFF;
+}
+
+#content li .cname {
+	font-size: 2em;
+	margin: 0 15px;
+	font-weight: 700;
+	float: left;
+	width: 80px;
+	height: 50px;
+}
+
+#content li .cvalue {
+	float: left;
+	font-size: 1.2em;
+	margin-right: 5px;
+	width: 110px;
+	text-align: center;
+	height: 50px;
+	line-height: 45px;
+}
+
+#content li .br:after {
+	content: 'BR';
+	font-size: 0.5em;
+	vertical-align: sub;
+	margin: 0 2px;
+}
+
+#content li .cbr:after {
+	content: 'CBR';
+	font-size: 0.5em;
+	vertical-align: sub;
+	margin: 0 2px;
+}
+
+#content li .sr:after {
+	content: 'SR';
+	font-size: 0.5em;
+	vertical-align: sub;
+	margin: 0 2px;
+}
+
+#content li .csr:after {
+	content: 'CSR';
+	font-size: 0.5em;
+	vertical-align: sub;
+	margin: 0 2px;
+}
+
+#content li.expand .title {
+	box-shadow: 0 5px 15px -5px #999;
+}
+
+#content li.expand .chart {
+	display: block;
+}
+
+.hidden {
+	display: none;
+}

@@ -1,0 +1,11 @@
+#Zip file for upload
+source.zip
+
+#other
+other
+
+#Private journal
+journal.md
+
+#Private key file
+*.pem

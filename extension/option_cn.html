@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="cn">
+	<head>
+		<meta charset="UTF-8"/>
+
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="option.css">
+
+		<title>中行汇率助手</title>
+
+		<script src="jquery-1.8.2.min.js"></script>
+		<script src="option.js"></script>
+	</head>
+	<body>
+		<div id="content">
+			<h1>设置</h1>
+			<div class="section">
+				<h2>语言</h2>
+				<ul>
+					<li><a href="option_cn.html" class="language checked">简体中文</a></li>
+					<li><a href="option_en.html" class="language">English</a></li>
+				</ul>
+			</div>
+			<div class="section">
+				<h2>币种</h2>
+				<p>请选择显示的币种。</p>
+				<ul id="clist">
+						<li><a href="GBP" class="currency">英镑</a></li>
+						<li><a href="HKD" class="currency">港币</a></li>
+						<li><a href="USD" class="currency">美元</a></li>
+						<li><a href="CHF" class="currency">瑞士法郎</a></li>
+						<li><a href="SGD" class="currency">新加坡元</a></li>
+						<li><a href="SEK" class="currency">瑞典克朗</a></li>
+						<li><a href="DKK" class="currency">丹麦克朗</a></li>
+						<li><a href="NOK" class="currency">挪威克朗</a></li>
+						<li><a href="JPY" class="currency">日元</a></li>
+						<li><a href="CAD" class="currency">加拿大元</a></li>
+						<li><a href="AUD" class="currency">澳大利亚元</a></li>
+						<li><a href="EUR" class="currency">欧元</a></li>
+						<li><a href="MOP" class="currency">澳门元</a></li>
+						<li><a href="PHP" class="currency">菲律宾比索</a></li>
+						<li><a href="THB" class="currency">泰国铢</a></li>
+						<li><a href="NZD" class="currency">新西兰元</a></li>
+						<li><a href="KRW" class="currency">韩国元</a></li>
+						<li><a href="RUB" class="currency">卢布</a></li>
+				</ul>
+			</div>
+			<div class="section">
+				<h2>图标文字</h2>
+				<p>设置图标文字内容：</p>
+				<p>币种:
+					<select id="badgeCurrency"> 
+						<option value="GBP">英镑</option>
+						<option value="HKD">港币</option>
+						<option value="USD">美元</option>
+						<option value="CHF">瑞士法郎</option>
+						<option value="SGD">新加坡元</option>
+						<option value="SEK">瑞典克朗</option>
+						<option value="DKK">丹麦克朗</option>
+						<option value="NOK">挪威克朗</option>
+						<option value="JPY">日元</option>
+						<option value="CAD">加拿大元</option>
+						<option value="AUD">澳大利亚元</option>
+						<option value="EUR">欧元</option>
+						<option value="MOP">澳门元</option>
+						<option value="PHP">菲律宾比索</option>
+						<option value="THB">泰国铢</option>
+						<option value="NZD">新西兰元</option>
+						<option value="KRW">韩国元</option>
+						<option value="RUB">卢布</option>
+					</select>
+				</p>
+				
+				<p>价格类型:
+					<ul>
+						<li>
+							<input type="radio" name="badgetype" value="BR" class="badgetype">
+							<label for="br">现汇买入价</label>
+						</li>
+						<li>
+							<input type="radio" name="badgetype" value="CBR" class="badgetype">
+							<label for="cbr">现钞买入价</label>
+						</li>
+						<li>
+							<input type="radio" name="badgetype" value="SR" class="badgetype">
+							<label for="sr">现汇卖出价</label>
+						</li>
+						<li>
+							<input type="radio" name="badgetype" value="CSR" class="badgetype">
+							<label for="csr">现钞卖出价</label>
+						</li>
+					</ul>
+				</p>
+			</div>
+			<div class="section">
+				<h2>刷新间隔</h2>
+				<p>选择从服务器获取数据的时间间隔:</p>
+				<ul>
+					<li>
+						<input type="radio" name="internal" value="600000" class="internal"><label for="tm">10 分钟</label>
+					</li>
+					<li>
+						<input type="radio" name="internal" value="1800000" class="internal"><label for="thm">30 分钟</label>
+					</li>
+					<li>
+						<input type="radio" name="internal" value="3600000" class="internal"><label for="oh">1 小时</label>
+					</li>
+					<li>
+						<input type="radio" name="internal" value="21600000" class="internal"><label for="sh">6 小时</label>
+					</li>
+				</ul>
+			</div>
+
+			<div class="section">
+				<h2>触发通知</h2>
+				<ul id="triggerlist">
+				</ul>
+				<div id="newTriggerPanel">
+					<p>如果币种：
+						<select id="tCurrency"> 
+							<option value="GBP">英镑</option>
+							<option value="HKD">港币</option>
+							<option value="USD">美元</option>
+							<option value="CHF">瑞士法郎</option>
+							<option value="SGD">新加坡元</option>
+							<option value="SEK">瑞典克朗</option>
+							<option value="DKK">丹麦克朗</option>
+							<option value="NOK">挪威克朗</option>
+							<option value="JPY">日元</option>
+							<option value="CAD">加拿大元</option>
+							<option value="AUD">澳大利亚元</option>
+							<option value="EUR">欧元</option>
+							<option value="MOP">澳门元</option>
+							<option value="PHP">菲律宾比索</option>
+							<option value="THB">泰国铢</option>
+							<option value="NZD">新西兰元</option>
+							<option value="KRW">韩国元</option>
+							<option value="RUB">卢布</option>
+						</select>
+						的 
+						<select id="tRate">
+							<option value="BR">现汇买入价</option>
+							<option value="CBR">现钞买入价</option>
+							<option value="SR">现汇卖出价</option>
+							<option value="CSR">现钞卖出价</option>
+						</select>
+
+						<select id="tOperator">
+							<option value='bigger'>大于</option>
+							<option value='smaller'>小于</option>
+							<option value='equal'>等于</option>
+						</select>
+						<input type="text" id="tValue">,
+						<br/>使用
+						<select id="tType">
+							<option value="m">信息</option>
+							<option value="v">语音</option>
+							<option value="mv">语音和信息</option>
+						</select>
+						通知我。
+						</p>
+						<p>
+							<a href="#" id="saveNewTrigger" class="button">确定</a>
+							<a href="#" id="cancelNewTrigger" class="button">取消</a>
+							<span id="triggerError">数值有误，请检查。</span>
+						</p>
+
+				</div>
+				<p><a href="#" id="newTrigger" class="button">添加</a></p>
+			</div>
+
+			<div class="save">
+				<a href="#" id="ui2Settings">保存</a>
+			</div>
+		</div>
+		<div id="message"></div>
+	</body>
+</html>
+
+<!-- 
+					<li><a href="" class="currency">GBP</a></li>
+					<li><a href="" class="currency">HKD</a></li>
+					<li><a href="" class="currency">USD</a></li>
+					<li><a href="" class="currency">CHF</a></li>
+					<li><a href="" class="currency">SGD</a></li>
+					<li><a href="" class="currency">SEK</a></li>
+					<li><a href="" class="currency">DKK</a></li>
+					<li><a href="" class="currency">NOK</a></li>
+					<li><a href="" class="currency">JPY</a></li>
+					<li><a href="" class="currency">CAD</a></li>
+					<li><a href="" class="currency">AUD</a></li>
+					<li><a href="" class="currency">EUR</a></li>
+					<li><a href="" class="currency">MOP</a></li>
+					<li><a href="" class="currency">PHP</a></li>
+					<li><a href="" class="currency">THB</a></li>
+					<li><a href="" class="currency">NZD</a></li>
+					<li><a href="" class="currency">KRW</a></li>
+					<li><a href="" class="currency">RUB</a></li>
+-->
