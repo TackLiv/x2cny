@@ -1,4 +1,4 @@
-# The X2CNY extension for chrome (BOCRates)
+# The X2CNY Extension for Chrome (BOCRates)
 
 A browser action to show the Bank of China`s currencies exchange rates in real time, with a popup showing the detail rates chart.
 If you have business in China or be a Chinese student studying abroad, you may ofen have money transfered by Bank of China. 
