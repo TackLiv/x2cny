@@ -21,7 +21,7 @@ var defaultSettings = {
 var intv;
 
 function getData(success) {
-		$.get('http://boc.globle.tk/data.json')
+		$.get('http://x2cny.tackliv.com/data.json')
 		.success(
 			function(data) {
 				currencyData = $.parseJSON(data);
