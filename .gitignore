@@ -9,3 +9,4 @@ journal.md
 
 #Private key file
 *.pem
+.DS_Store

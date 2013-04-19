@@ -10,18 +10,21 @@ var currencyData;
 var localSettings;
 
 var defaultSettings = {
-	BadgeCurrency:'SEK',
-	BadgeRate:'SR',
+	BadgeCurrency:'',
+	Badgetype:'',
 	UILanguage:window.navigator.language,
-	ShownCurrencies:['SEK'],
+	ShownCurrencies:[''],
 	Tick:1800000,
 	Triggers:[]
 };
 
 var intv;
 
+var url = 'http://x2cny.tackliv.com/data.json'
+var url2 = 'http://x2cny.ap01.aws.af.cm/data.json'
+
 function getData(success) {
-		$.get('http://x2cny.tackliv.com/data.json')
+		$.get(url2)
 		.success(
 			function(data) {
 				currencyData = $.parseJSON(data);
@@ -36,8 +39,11 @@ function getData(success) {
 function setBadge() {
 	if(typeof(currencyData) == 'undefined')
 		return;
-	var s = currencyData[localSettings.BadgeCurrency][localSettings.BadgeRate];
-	s = s.replace(".","");
+	var s = currencyData[localSettings.BadgeCurrency][localSettings.Badgetype];
+	if(s != undefined)
+		s = s.replace(".","");
+	else
+		return
 	var t = currencyData['SEK']['DATETIME'];
 	chrome.browserAction.setTitle({title:t});
 	chrome.browserAction.setBadgeText({text:s});

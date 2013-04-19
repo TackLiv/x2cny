@@ -87,7 +87,7 @@ function badge2UI(){
 	//Select the Badge Currency
 	$("#badgeCurrency").val(s.BadgeCurrency);
 	//Select the Badge Currency type
-	qString = ".badgetype[value="+s.BadgeRate+"]";
+	qString = ".badgetype[value="+s.Badgetype+"]";
 	$(qString).attr('checked',true);
 }
 
