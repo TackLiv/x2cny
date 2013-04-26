@@ -24,11 +24,3 @@ Support currencies:
 ### Choice 1
 
 Install from Chrome Web store [here](https://chrome.google.com/webstore/detail/bocrates/kldmocemifmjcjjefggldnkoccjhonhj)
-
-or
-
-### Choice 2
-
-1. Download the BOCRates.crx 
-2. Open [chrome://chrome/extensions/](chrome://chrome/extensions/) in Google Chrome browser.
-3. Drag the crx file into the page and then confirm.
