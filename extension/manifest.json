@@ -18,7 +18,8 @@
     "tts",
     "storage",
     "notifications",
-    "http://*.ap01.aws.af.cm//*"
+    "http://*.ap01.aws.af.cm//*",
+    "http://boc.zzh.net//*"
   ],
   "web_accessible_resources": [
     "boc48.png"

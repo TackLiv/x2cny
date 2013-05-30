@@ -20,20 +20,20 @@ var defaultSettings = {
 
 var intv;
 
-var url = 'http://x2cny.tackliv.com/data.json'
-var url2 = 'http://x2cny.ap01.aws.af.cm/data.json'
+var url2 = 'http://boc.zzh.net/data.json'
+var url1 = 'http://x2cny.ap01.aws.af.cm/data.json'
 
 function getData(success) {
-		$.get(url2)
-		.success(
-			function(data) {
+		var dealData = function(data) {
 				currencyData = $.parseJSON(data);
 				console.log("Retrieve data successfully.")
 				if(success && typeof(success) == 'function') {
 					success();
 				}
-			}
-		);
+			};
+		$.get(url1)
+			.success(dealData)
+			.fail($.get(url2).success(dealData));
 }
 
 function setBadge() {
